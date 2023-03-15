@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+class Player
+{
+	public:
+		Player() : m_uname{"unknownPlayer"} {}
+
+		Player(int score) : m_score{score} {}
+
+	private:
+		std::string m_uname {};
+		int m_score;
+};
+		
+class Team
+{
+	public:
+		Team(Player teamPlayers[32]): m_players{tName} {}
+
+		std::string getName()
+		{
+			return m_name;
+		}
+	
+	private:
+		Player players[32];
+};
+
+int main()
+{
+
+
+	return 0;
+}
